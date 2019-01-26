@@ -8,6 +8,7 @@ def get_md5(url):
         url = url.encode("utf-8")
     m = hashlib.md5()
     m.update(url)
+    print(m)
     return m.hexdigest()
 
 
